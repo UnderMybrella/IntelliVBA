@@ -1,0 +1,25 @@
+<component name="InspectionProjectProfileManager">
+  <profile version="1.0">
+    <option name="myName" value="Project Default" />
+    <inspection_tool class="BlockingMethodInNonBlockingContext" enabled="true" level="WARNING" enabled_by_default="true">
+      <option name="myBlockingAnnotations">
+        <list>
+          <option value="org.jetbrains.annotations.Blocking" />
+          <option value="io.micronaut.core.annotation.Blocking" />
+          <option value="io.smallrye.common.annotation.Blocking" />
+          <option value="dev.brella.kornea.annotations.BlockingOperation" />
+        </list>
+      </option>
+      <option name="myNonBlockingAnnotations">
+        <list>
+          <option value="org.jetbrains.annotations.NonBlocking" />
+          <option value="io.micronaut.core.annotation.NonBlocking" />
+          <option value="io.smallrye.common.annotation.NonBlocking" />
+          <option value="dev.brella.kornea.annotations.ReactiveContext" />
+        </list>
+      </option>
+    </inspection_tool>
+    <inspection_tool class="Eslint" enabled="true" level="WARNING" enabled_by_default="true" />
+    <inspection_tool class="TsLint" enabled="true" level="WARNING" enabled_by_default="true" />
+  </profile>
+</component>

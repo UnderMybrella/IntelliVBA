@@ -1,0 +1,61 @@
+<project version="4">
+  <component name="ANTLRGenerationPreferences">
+    <option name="perGrammarGenerationSettings">
+      <list>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/resources/vba.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\IdeaProjects\IntelliVBA\src\main\java" />
+          <option name="libDir" value="" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="dev.brella.vba" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/resources/VBA.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\IdeaProjects\IntelliVBA\src\main\java" />
+          <option name="libDir" value="C:\IdeaProjects\IntelliVBA\src\main\java" />
+          <option name="encoding" value="UTF-8" />
+          <option name="pkg" value="dev.brella.vba" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/resources/VBALexer.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\IdeaProjects\IntelliVBA\src\main\java" />
+          <option name="libDir" value="C:\IdeaProjects\IntelliVBA\src\main\java" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="dev.brella.vba" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+        <PerGrammarGenerationSettings>
+          <option name="fileName" value="$PROJECT_DIR$/src/main/resources/VBAParser.g4" />
+          <option name="autoGen" value="true" />
+          <option name="outputDir" value="C:\IdeaProjects\IntelliVBA\src\main\java" />
+          <option name="libDir" value="C:\IdeaProjects\IntelliVBA\src\main\java" />
+          <option name="encoding" value="" />
+          <option name="pkg" value="dev.brella.vba" />
+          <option name="language" value="" />
+          <option name="generateVisitor" value="true" />
+        </PerGrammarGenerationSettings>
+      </list>
+    </option>
+  </component>
+  <component name="ExternalStorageConfigurationManager" enabled="true" />
+  <component name="FrameworkDetectionExcludesConfiguration">
+    <file type="web" url="file://$PROJECT_DIR$" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_17" default="true" project-jdk-name="17" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/out" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="jpab" />
+  </component>
+</project>
