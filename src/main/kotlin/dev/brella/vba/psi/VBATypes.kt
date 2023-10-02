@@ -24,6 +24,9 @@ object VBATypes {
     val MODULE by T.RULE_module.rule
 
     val IDENTIFIER by T.IDENTIFIER.token
+    val AMBIGUOUS_IDENTIFIER by T.RULE_ambiguousIdentifier.rule
+
+    val SUB_STATEMENT by T.RULE_subStmt.rule
 
     val REM_COMMENT by T.REMCOMMENT.token
     val COMMENT by T.COMMENT.token
@@ -636,14 +639,8 @@ object VBATypes {
         private fun of(vararg elements: IElementType): TokenSet = TokenSet.create(*elements)
     }
 
-    fun createElement(node: ASTNode): PsiElement =
-        when (node.elementType) {
-            else -> ANTLRPsiNode(node)
-        }
-
     private val Int.token get(): Lazy<TokenIElementType> = lazy { TOKEN_TYPES[this] }
     private val Int.rule get(): Lazy<RuleIElementType> = lazy { RULE_TYPES[this] }
-
     init {
         @Suppress("DEPRECATION")
         PSIElementTypeFactory.defineLanguageIElementTypes(VBALanguage, T.tokenNames, T.ruleNames)

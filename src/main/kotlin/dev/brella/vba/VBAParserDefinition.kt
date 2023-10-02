@@ -10,6 +10,7 @@ import com.intellij.psi.PsiElement
 import com.intellij.psi.PsiFile
 import com.intellij.psi.tree.IFileElementType
 import com.intellij.psi.tree.TokenSet
+import dev.brella.vba.psi.VBAElementFactory
 import dev.brella.vba.psi.VBAPsiFileRoot
 import dev.brella.vba.psi.VBATypes
 import org.antlr.intellij.adaptor.lexer.PSIElementTypeFactory
@@ -33,7 +34,7 @@ class VBAParserDefinition : ParserDefinition {
         TokenSet.EMPTY
 
     override fun createElement(node: ASTNode): PsiElement =
-        VBATypes.createElement(node)
+        VBAElementFactory.createElement(node)
 
     override fun createFile(viewProvider: FileViewProvider): PsiFile =
         VBAPsiFileRoot(viewProvider)

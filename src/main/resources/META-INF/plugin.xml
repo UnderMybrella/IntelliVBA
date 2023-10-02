@@ -8,14 +8,13 @@
     <name>IntelliVBA</name>
 
     <!-- A displayed Vendor name or Organization ID displayed on the Plugins Page. -->
-    <vendor email="support@yourcompany.com" url="https://www.yourcompany.com">YourCompany</vendor>
+    <vendor email="vba_support@brella.dev" url="https://www.yourcompany.com">Brella</vendor>
 
     <!-- Description of the plugin displayed on the Plugin Page and IDE Plugin Manager.
          Simple HTML elements (text formatting, paragraphs, and lists) can be added inside of <![CDATA[ ]]> tag.
          Guidelines: https://plugins.jetbrains.com/docs/marketplace/plugin-overview-page.html#plugin-description -->
     <description><![CDATA[
-    Enter short description for your plugin here.<br>
-    <em>most HTML tags may be used</em>
+    VBA support for IntelliJ, including highlighting, parsing, and IntelliSense.<br>
   ]]></description>
 
     <!-- Product and plugin compatibility requirements.
@@ -48,5 +47,7 @@
         <annotator language="vba" implementationClass="dev.brella.vba.VBADumbAnnotator" />
 
         <colorSettingsPage implementation="dev.brella.vba.VBAColourSettingsPage" />
+        <codeInsight.lineMarkerProvider language="vba" implementationClass="dev.brella.vba.VBALineMarkerProvider" />
+        <completion.contributor language="vba" implementationClass="dev.brella.vba.VBACompletionContributor" />
     </extensions>
 </idea-plugin>
